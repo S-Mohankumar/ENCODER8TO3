@@ -5,3 +5,16 @@
 # Circuit Diagram
 ![image](https://github.com/RESMIRNAIR/ENCODER3TO8/assets/154305926/6fa5fe84-fe6f-472d-b9c0-e6dfa17413d3)
 ![image](https://github.com/RESMIRNAIR/ENCODER3TO8/assets/154305926/7d147e2a-ba03-4714-baee-17615c9c50c1)
+# Program
+```
+module encoder_8 8(d,a,b,c) ;
+input [7:0]d;
+output a,b,c;
+or(a,d[4],d[5],d[6],d[7])
+or(b,d[2],d[3],d[6],d[7]);
+or(c,d[1],d[3],d[5],d[7])
+endmodule
+``` 
+# Output
+![WhatsApp Image 2024-03-24 at 09 59 09_eace9d02](https://github.com/RESMIRNAIR/ENCODER8TO3/assets/163832108/85c15da2-35bb-4994-a9aa-2a6211b7d0a0)
+
